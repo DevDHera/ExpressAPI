@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/DevDHera/ExpressAPI.git"
   },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
   "author": "Devin Herath",
   "license": "MIT",
   "bugs": {
