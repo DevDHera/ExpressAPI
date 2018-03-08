@@ -1,0 +1,19 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "Simple Book Strore App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevDHera/ExpressAPI.git"
+  },
+  "author": "Devin Herath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevDHera/ExpressAPI/issues"
+  },
+  "homepage": "https://github.com/DevDHera/ExpressAPI#readme"
+}
