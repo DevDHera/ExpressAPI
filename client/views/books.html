@@ -1,0 +1,47 @@
+<div class="card" ng-init="getBooks()">
+    <div class="card-header">
+        Latest Books
+    </div>
+    <div class="card-block">
+        <blockquote class="card-blockquote">
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>-->
+        
+        <div class="row">
+            <div class="col-md-12">
+            <div ng-repeat="book in books">    
+                <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>{{book.title}}</h4>
+                                <p>{{book.description}}</p>
+                                <a href="#/books/details/{{book._id}}" class="btn btn-primary">View Details</a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{{book.image_url}}" class="img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div ng-repeat="book in books">
+            <p>{{book.title}}</p>
+        </div>-->
+
+        <!--<div ng-repeat="book in books">
+            <div ng-if="$even" class="row">
+            <div class="col-md-6">
+                {{book.title}}
+                <p>{{book.description}}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{book.image_url}}">
+            </div>
+            </div>
+        </div>-->
+
+
+        </blockquote>
+    </div>
+</div>

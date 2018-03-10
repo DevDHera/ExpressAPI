@@ -1,0 +1,31 @@
+<br><a href="#/books" class="btn btn-outline-secondary">Go Back</a><br><br>
+<div class="card" ng-init="getBook()">
+    <div class="card-header">
+        <b>{{book.title}}</b>
+    </div>
+    <div class="card-block">
+        <blockquote class="card-blockquote">           
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{book.image_url}}">
+            </div>
+            <div class="col-md-8">
+                <p>{{book.description}}</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Genre: {{book.genre}}</li>
+                    <li class="list-group-item">Author: {{book.author}}</li>
+                    <li class="list-group-item">Publisher: {{book.publisher}}</li>
+                    <li class="list-group-item">Pages: {{book.pages}}</li>
+                </ul>
+                <br>
+                <a target="_blank" href="{{book.buy_url}}" class="btn btn-success btn-block">Buy on Barnes & Noble</a>    
+            </div>
+        </div>
+        </blockquote>
+    </div>
+</div>
+
+<div class="float-right">
+    <a href="#/books/edit/{{book._id}}" class="btn btn-outline-warning">Edit</a>
+    <a href="#" ng-click="removeBook(book._id)" class="btn btn-outline-danger">Delete</a>
+</div>
